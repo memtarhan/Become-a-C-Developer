@@ -16,6 +16,22 @@ int main()
     int chipsInPile = 0;
     int chipsTaken = 0;
 
+    string players[2];
+
+    cout << "Player 1, please enter your name: \n";
+    cin >> players[0];
+    cout << "Player 2, please enter your name: \n";
+    cin >> players[1];
+
+    // string players[2] = {"X", "Y"};
+    // or
+    // string players[2];
+    // players[0] = "X";
+    // players[1] = "Y";
+
+    /// - 2D array
+    int ticTacToe[3][3];
+
     // seed the random number generator
     srand(time(0));
 
