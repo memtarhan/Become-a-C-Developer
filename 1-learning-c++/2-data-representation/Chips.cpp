@@ -37,7 +37,19 @@ int main()
 
     chipsInPile = (rand() % MAX_CIPS) + 1;
     cout << "This round will start with " << chipsInPile << " chips in the pile \n";
+    if (player1Turn)
+    {
+        cout << players[0] << " How many chips would you like?\n";
+    }
+    else
+    {
+        cout << players[1] << " How many chips would you like?\n";
+    }
+
+    // string player = player1Turn ? "X": "Y";
+
     cout << "You can only take " << static_cast<int>(chipsInPile * MAX_TURN) << endl;
+    cin >> chipsTaken;
 
     return 0;
 }
