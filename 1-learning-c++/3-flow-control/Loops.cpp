@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
 
+    // - For loop
     // for (int i = 0; i < 5; i++)
     // {
     //     cout << "Index " << i << endl;
@@ -19,6 +20,14 @@ int main()
                 cout << h << ":" << m << ":" << s << "\n";
             }
         }
+    }
+
+    // - While loop
+    int m = 0;
+    while (m < 5)
+    {
+        cout << "Hello World " << m << endl;
+        m++;
     }
 
     return 0;
