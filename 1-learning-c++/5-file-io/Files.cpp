@@ -24,19 +24,24 @@ int main()
 
     // inputFileA.close();
 
-    ifstream inStream;
-    inStream.open("passphrase.txt");
+    // ifstream inStream;
+    // inStream.open("passphrase.txt");
 
-    string passphrase;
+    // string passphrase;
 
-    if (!inStream.fail())
-    {
-        while (inStream >> passphrase)
-        {
-            cout << "The pass phrase is: " << passphrase << endl;
-        }
-    }
-    inStream.close();
+    // if (!inStream.fail())
+    // {
+    //     while (inStream >> passphrase)
+    //     {
+    //         cout << "The pass phrase is: " << passphrase << endl;
+    //     }
+    // }
+    // inStream.close();
 
+    ofstream outputFileA;
+    outputFileA.open("sample_1.txt", ios::app); // Open the file but overwrite it, append to it. 
+    outputFileA << "Mehmetttttt" << 20 << endl;
+    outputFileA.close();
+    
     return 0;
 }
