@@ -8,6 +8,9 @@ using namespace std;
 /// - Declaring a constant
 const int MAX_CIPS = 100;
 const float MAX_TURN = .5;
+
+string findPlayerName(string[], bool);
+
 int main()
 {
     bool player1Turn = true;
@@ -41,14 +44,7 @@ int main()
     {
         do
         {
-            if (player1Turn)
-            {
-                cout << players[0] << " How many chips would you like?\n";
-            }
-            else
-            {
-                cout << players[1] << " How many chips would you like?\n";
-            }
+            cout << findPlayerName(players, player1Turn) << " How many chips would you like?\n";
 
             // string player = player1Turn ? "X": "Y";
 
@@ -71,15 +67,7 @@ int main()
         if (chipsInPile == 0)
         {
             gameOver = true;
-
-            if (player1Turn)
-            {
-                cout << players[1] << ", congratulations you won\n";
-            }
-            else
-            {
-                cout << players[0] << ", congratulations you won\n";
-            }
+            cout << findPlayerName(players, player1Turn) << ", congratulations you won\n";
         }
         else
         {
@@ -88,4 +76,12 @@ int main()
     }
 
     return 0;
+}
+
+string findPlayerName(string names[], bool playerTurn)
+{
+    if (playerTurn)
+        return names[0];
+    else
+        return names[1];
 }

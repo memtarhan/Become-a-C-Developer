@@ -19,7 +19,7 @@ string retrieveGreeting(string person)
     By default: A regular data type is passed by value while an array is passed by reference
 */
 /// - Second parameter is passed by reference 
-void printReceipt(string, float &);
+void printReceipt(string, float &); // A function's prototype 
 
 int main()
 {
