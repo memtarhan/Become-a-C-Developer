@@ -67,7 +67,7 @@ int main()
     So, there's a couple of major differences between a pointer and a reference that's worth understanding at this point. 
     First, you don't need to, dereference a reference. So you don't use an asterisk, no special punctuations required. 
     The value of the reference is always the value of the referred variable. 
-    Second, there's no syntax for changing and reference. Once the reference is defined, it can't be changed. 
+    Second, there's no syntax for changing a reference. Once the reference is defined, it can't be changed. 
     When I change Y here, I'm not changing Y I'm changing X. Y remains a reference of X. So a reference is not even really a variable.
     */
 
